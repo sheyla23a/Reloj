@@ -27,3 +27,44 @@ function actualizarReloj() {
   document.getElementById("ampm").textContent = ampm;
 }
 
+function obtenerNombreDia(dia) {
+  const diasSemana = [
+    "Domingo",
+    "Lunes",
+    "Martes",
+    "Miércoles",
+    "Jueves",
+    "Viernes",
+    "Sábado",
+  ];
+  return diasSemana[dia];
+}
+
+function obtenerNombreMes(mes) {
+  const meses = [
+    "Enero",
+    "Febrero",
+    "Marzo",
+    "Abril",
+    "Mayo",
+    "Junio",
+    "Julio",
+    "Agosto",
+    "Septiembre",
+    "Octubre",
+    "Noviembre",
+    "Diciembre",
+  ];
+  return meses[mes];
+}
+
+function agregarCero(numero) {
+  if (numero < 10) {
+    return "0" + numero;
+  } else {
+    return numero;
+  }
+}
+
+setInterval(actualizarReloj, 1000);
+actualizarReloj();
