@@ -1,3 +1,8 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -14,6 +19,60 @@ main {
 .navbarEstilo {
     background-color: rgba(255, 255, 255, 0.8); 
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.covertura{
+    width: 90%;
+    max-width: 1000px;
+}
+
+.widget{
+width:  40%;
+margin:  1em;
+}
+
+.widget p{
+    display: inline-block;
+    line-height: 1em;
+    color: beige;
+}
+
+.fecha{
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    font-size: 1.5em;
+    background:rgb(0, 0, 0,.5);
+    padding: 20px;
+    width: 100%;
+}
+
+.reloj{
+    font-family: 'Oswald', sans-serif;
+    width: 40%;
+    padding: 10px;
+    font-size: 4em;
+    text-align: center;
+    background:rgb(0, 0, 0,.5);
+    margin-left: 0.3em;
+}
+
+.reloj p{
+    display: inline-block;
+    color: beige;
+}
+.reloj .bloque-segundos{
+    display: inline-block;
+}
+
+.reloj .segundos, 
+.reloj .ampm{
+    font-size: 2rem;
+    display: block;
+}
+
+.reloj .ampm  {
+    margin: 0 ;
+    padding: 0;
 }
 
 .footerEstilo{
